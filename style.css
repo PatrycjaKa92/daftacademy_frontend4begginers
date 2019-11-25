@@ -1,0 +1,266 @@
+/*
+Przeglądarki internetowe nadają znacznikom HTML wartości początkowe,
+które się różnią w zależności od producenta (np. Chrome, Firefox, Opera, Internet Explorer, Microsoft Edge).
+Dlatego popularną praktyką jest tworzenie tzw. resetów,
+czyli plików CSS zawierających reguły, które nadpisują te wartości,
+aby były one jednolite niezalenie od przeglądarki.
+Więcej na ten temat: https://cssreset.com/what-is-a-css-reset/
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTQ0MHB4IiBoZWlnaHQ9IjgwMHB4IiB2aWV3Qm94PSIwIDAgMTQ0MCA4MDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjIgKDY3MTQ1KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5iZ19mdWxsPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHJlY3QgaWQ9InBhdGgtMSIgeD0iMCIgeT0iMCIgd2lkdGg9IjE0NDAiIGhlaWdodD0iODAwIj48L3JlY3Q+CiAgICAgICAgPHJhZGlhbEdyYWRpZW50IGN4PSI1MCUiIGN5PSIwJSIgZng9IjUwJSIgZnk9IjAlIiByPSIxNjcuOTk5NjM0JSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwLjUwMDAwMCwwLjAwMDAwMCksc2NhbGUoMC41NjQ1NjUsMS4wMDAwMDApLHJvdGF0ZSg4OC44OTY5OTIpLHRyYW5zbGF0ZSgtMC41MDAwMDAsLTAuMDAwMDAwKSIgaWQ9InJhZGlhbEdyYWRpZW50LTMiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjQTk4RThFIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMzQjAwNUQiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICAgICAgPHJhZGlhbEdyYWRpZW50IGN4PSI1MCUiIGN5PSIwJSIgZng9IjUwJSIgZnk9IjAlIiByPSIxMDAlIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNTAwMDAwLDAuMDAwMDAwKSxzY2FsZSgwLjcwNjU5MywxLjAwMDAwMCkscm90YXRlKDkwLjAwMDAwMCksdHJhbnNsYXRlKC0wLjUwMDAwMCwtMC4wMDAwMDApIiBpZD0icmFkaWFsR3JhZGllbnQtNCI+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNBOThFOEUiIG9mZnNldD0iMCUiPjwvc3RvcD4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzNCMDA1RCIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICAgICAgPC9yYWRpYWxHcmFkaWVudD4KICAgICAgICA8cmFkaWFsR3JhZGllbnQgY3g9IjUwJSIgY3k9IjAlIiBmeD0iNTAlIiBmeT0iMCUiIHI9IjEwMCUiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC41MDAwMDAsMC4wMDAwMDApLHNjYWxlKDAuOTIyNDc0LDEuMDAwMDAwKSxyb3RhdGUoOTAuMDAwMDAwKSx0cmFuc2xhdGUoLTAuNTAwMDAwLC0wLjAwMDAwMCkiIGlkPSJyYWRpYWxHcmFkaWVudC01Ij4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzc4MkRBMSIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjM0IwMDVEIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGcgaWQ9ImJnX2Z1bGwiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIGZpbGw9IiMxODA0MjEiIHg9IjIiIHk9IjAiIHdpZHRoPSIxNDM3IiBoZWlnaHQ9IjgwMCI+PC9yZWN0PgogICAgICAgIDxnIGlkPSJiZyIgb3BhY2l0eT0iMC41MDMyMzE5NTciPgogICAgICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBmaWxsPSJ3aGl0ZSI+CiAgICAgICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgIDxnIGlkPSJNYXNrIj48L2c+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cCIgbWFzaz0idXJsKCNtYXNrLTIpIj4KICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjUuMDAwMDAwLCAtNDAyLjE2MjE2MikiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIGZpbGw9IiMyRjIyMzMiIHg9IjE2MiIgeT0iNDAyLjE2MjE2MiIgd2lkdGg9IjE0NDAiIGhlaWdodD0iODAwIj48L3JlY3Q+CiAgICAgICAgICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZSIgZmlsbD0idXJsKCNyYWRpYWxHcmFkaWVudC0zKSIgb3BhY2l0eT0iMC4wODA3NzU2Njk2IiB4PSIxNjUiIHk9IjM5NC41OTQ1OTUiIHdpZHRoPSIxNDQwIiBoZWlnaHQ9IjgxMi45NzI5NzMiPjwvcmVjdD4KICAgICAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iVHJpYW5nbGUiIGZpbGw9InVybCgjcmFkaWFsR3JhZGllbnQtNCkiIG9wYWNpdHk9IjAuMjQ1NjI4NzIiIHBvaW50cz0iODcyLjM3MDMxOSAwIDE3NDYgMTIwNy41Njc1NyAzNyAxMjA3LjU2NzU3Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlRyaWFuZ2xlIiBmaWxsPSJ1cmwoI3JhZGlhbEdyYWRpZW50LTUpIiBvcGFjaXR5PSIwLjI0NzA5MzU2NCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODg5LjUwMDAwMCwgMTIyMi43MDI3MDMpIHJvdGF0ZSgtMTgwLjAwMDAwMCkgdHJhbnNsYXRlKC04ODkuNTAwMDAwLCAtMTIyMi43MDI3MDMpICIgcG9pbnRzPSI4NzAuOTY1NjI1IDQwMi4xNjIxNjIgMTc3OSAyMDQzLjI0MzI0IDAgMjA0My4yNDMyNCI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 10px;
+}
+
+nav: {
+	font-size:13px;
+	font-style:bold;
+	color: #ef008e;
+	text-transform:uppercase;
+	}
+	
+.content-section__header {
+	font-size:28px;
+	font-style:bold;
+	color: #ef008e;
+	padding:20px;
+	text-transform:uppercase;}
+	
+.band-members__name {
+	font-size:15px;
+	font-style:bold;
+	color: #ccc8ff;
+	text-transform:uppercase;
+	}
+	
+.band-members__desc {
+	font-size:13px;
+	font-style:regular;
+	color: #d8d8fb;
+	}
+	
+.about-section__desc-header {
+	text-transform:uppercase;
+	color: #d8d8fb;
+}
+
+.about-section__desc {
+	width:350px;
+	position:relative;
+	top:-50px;
+	background-color: #660066;
+	opacity:1;
+	border-bottom:solid;
+	border-bottom-color: #ef008e;
+	padding:15px;
+	text-align: justify;}
+.obraz1 {
+	width:700px;
+	border-top:solid;
+	border-top-color: #ef008e;}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ZAGADNIENIE PONADPROGRAMOWE
+Rekomendowany zestaw właściwości, które pozwalają na ukrycie tekstu w taki sposób,
+że będzie niewidoczny do standardowego użytkownika, a czytniki ekranowe wciąż będą go czytać.
+Więcej na ten temat: https://webaim.org/techniques/css/invisiblecontent/
+*/
+.screen-reader-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/*
+Sekcja pomocnicza, aby zwizualizować pozycje głównych bloków strony. Będzie usunięta w następnych krokach.
+*/
+.page-header {
+    background-color: #25072e;
+}
+
+.page-content {
+    background-color: #25072e;
+}
+
+.page-footer {
+    background-color: #25072e;
+}
+
+.content-section {
+    background-color: #25072e;
+}
+.content-section:nth-child(odd) {
+    background-color: #25072e;
+}
+/*
+Koniec sekcji pomocniczej
+*/
+
+/*
+Ustawiając sekcje nagłówka i stopki w pozycji 'fixed' sprawiamy,
+że niezależnie od pozycji paska przewijania elementy te będą znajdowały się
+w tej samej pozycji względem okna przeglądarki.
+Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right', 'left'.
+*/
+
+.page-header {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+
+/*
+Lewy margines ustawiony na kontenerze z główną zawartością strony sprawia,
+że nie będzie ona nachodzić na nagłówek i stopkę niezależnie od pozycji paska przewijania.
+Na projekcie graficznym sekcja menu ma szerokość około 170px i jest oddalona od krawędzi ekranu
+o 50px, więc można założyć, że 220px marginesu będzie wartością stosunkowo bezpieczną.
+Z kolei spady (padding) nadane na kontener wyznaczają minimalną odległość, na jaką będzie oddalona
+treść strony od otaczających ją granic kontenera (wartość "0 10%" jest
+skrótem od padding-top: 0, padding-bottom: 0, padding-left: 10%, padding-right: 10%).
+Właściwość "text-align: right" przykleja zawartość do prawej strony
+(oddziałuje na elementy, które są elementami inline'owymi, np. tekst, znaczniki <a>, <span> czy elementy z nadanym stylem "display: inline-block").
+*/
+.page-content {
+    margin-left: 220px;
+    padding: 0 10%;
+    text-align: right;
+}
+.band-members {
+	display: flex; 
+	position:relative;
+	top:100px;
+	}
+	
+.concerts {
+	padding-left:180px;
+	display: grid;
+	grid-template-columns: 370px 370px;
+	gap:20px;	
+	}
+	
+.concerts__image {
+	width:350px;
+	border-bottom:solid;
+	border-bottom-color: #ef008e;
+	}
+.concerts__date {
+	font-size:15px;
+	font-style:bold;
+	color: #ccc8ff;
+	position:relative;
+	right:270px;
+	}
+	
+.concerts__location {
+	font-size:13px;
+	font-style:regular;
+	color: #d8d8fb;
+	position:relative;
+	right:240px;
+	}
+	
+.button {
+	position:relative;
+	top:-50px;
+	background-color:#25072e;
+	opacity:0.7;
+	color: #dbd8fb;
+	text-transform:uppercase;}
+	
+iframe {
+	border-top:solid;
+	border-top-color: #ef008e;
+	}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	gap:15px;	
+	}
+	
+.gallery__image {
+	width:270px;
+	border-top:solid;
+	border-top-color: #ef008e;
+	}
+	
+.gallery__image_ostatnie {
+	width:500px;
+	position:relative;
+	right:400px;
+	}
+	
+address {
+	color: #d8d8fb;
+	position: relative;
+	top:-200px;
+	}
+
+.form {
+	position:relative;
+	right:700px;
+	
+	}
+	
+.form__input {
+	background-color: #660066;
+	border:0;
+	width:200px;
+	}
+
+.button2 {
+	background-color:#25072e;
+	opacity:0.7;
+	color: #dbd8fb;
+	text-transform:uppercase;
+	font-size:12px
+	font-style: semibold;
+	position:relative;
+	top: 20px;
+	}
+.form__field {
+	color:#ccc8ff;
+	font-style:regular;
+	}
+.form__label {
+	position:relative;
+	right:150px;
+	text-align:center;
+	}
+	
+.social-links__item {
+	opacity:0.6;
+	width:30px;
+	height:30px;
+}
+/*
+Projekt graficzny zakłada, że każda sekcja strony będzie wypełniać całą wysokość okna przeglądarki
+lub więcej, jeśli zawartość danej sekcji jest wyższa. Dlatego świetnym rozwiązaniem
+będzie użycie jednostki "vh", która oznacza 1% wysokości okna przeglądarki z właściwością "min-height",
+która wymusza wysokość elementu na zadaną wartość lub wyższą.
+*/
+.content-section {
+    min-height: 100vh;
+	}

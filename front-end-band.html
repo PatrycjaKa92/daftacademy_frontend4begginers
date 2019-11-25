@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>6BM Band Official Website</title>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
+    <body>
+        <header class="page-header">
+            <h1 class="page-brand">
+                <img src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/logo.png" alt="6BM logo" />
+            </h1>
+            <nav class="page-navigation">
+                <ul class="page-navigation__items">
+                    <li class="page-navigation__item">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="page-navigation__item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-navigation__item">
+                        <a href="#concerts">Concerts</a>
+                    </li>
+                    <li class="page-navigation__item">
+                        <a href="#video">Video</a>
+                    </li>
+                    <li class="page-navigation__item">
+                        <a href="#photos">Photos</a>
+                    </li>
+                    <li class="page-navigation__item">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="page-content">
+            <section id="home" class="content-section">
+                <!--
+                    ZAGADNIENIE PONADPROGRAMOWE
+                    Nagłówek 'Home' nie jest pokazany na projekcie graficznym, ale dobrą praktyką
+                    jest umieszczanie nagłówków przy każdej głównej sekcji strony.
+                    Pozwoli to na użytkownikom czytników ekranowych (np. osobom niewidomym lub niedowidzącym)
+                    na zorientowanie się w strukturze naszej strony.
+                    A żeby zachować wygląd strony adekwatny do projektu graficznego,
+                    można utworzyć pomocniczą klasę CSS (np. 'screen-reader-only'),
+                    która będzie ukrywała dany element dla standardowego użytkownika.
+                    Należy jednak pamiętać, że ukrywanie elementów strony może obniżyć ranking
+                    pozycjonowania twojej strony (SEO) i powinniśmy starać się umieszczać elementy nagłówkowe
+                    w projekcie graficznym.
+                    Dlatego też trzeba świadomie stosować to rozwiązanie i jeśli bardziej zależy nam na
+                    pozycjonowaniu niż dostępności, wtedy możemy użyć więcej niż jeden znacznik <h1> i
+                    używać go jako głównego nagłówka danych sekcji (w przypadku naszego projektu <h2>
+                    zamienilibyśmy na <h1>, a <h3> na <h2>).
+                -->
+                <h2 class="content-section__header screen-reader-only">Home</h2>
+                <ul class="band-members">
+                    <li class="band-members__item">
+                        <img class="band-members__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band-member01.png" alt="Image of stylized keyboard player's face" />
+                        <p class="band-members__name">Kamil Zgondek</p>
+                        <p class="band-members__desc">Keyboard</p>
+                    </li>
+                    <li class="band-members__item">
+                        <img class="band-members__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band-member02.png" alt="Image of stylized vocalist's face" />
+                        <p class="band-members__name">Łukasz Furman</p>
+                        <p class="band-members__desc">Vocals</p>
+                    </li>
+                    <li class="band-members__item">
+                        <img class="band-members__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band-member03.png" alt="Image of stylized drummer's face" />
+                        <p class="band-members__name">Kamil Majewski</p>
+                        <p class="band-members__desc">Drums</p>
+                    </li>
+                    <li class="band-members__item">
+                        <img class="band-members__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band-member04.png" alt="Image of stylized bassist's face" />
+                        <p class="band-members__name">Daniel Cajzer</p>
+                        <p class="band-members__desc">Bass guitar</p>
+                    </li>
+                </ul>
+
+            </section>
+            <section id="about" class="content-section about-section">
+                <h2 class="content-section__header">About</h2>
+                <img class="obraz1" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band01.jpg" alt="Image of band members standing at the construction site" />
+                <div class="about-section__desc">
+                    <h3 class="about-section__desc-header">Straight from Lublin</h3>
+                    <p class="about-section__desc-details">
+                        6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock.<br/>
+                        Band members aim to convey emotions, reflexion but also hope.<br/><br/>
+                        They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass.<br/>
+                        As for now they released their debut EP - TRINITY and they started working on their first full length album.
+                    </p>
+                </div>
+            </section>
+            <section id="concerts" class="content-section">
+                <h2 class="content-section__header">Concerts</h2>
+                <div class="concerts">
+                    <article class="concerts__item">
+                        <img class="concerts__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band02_WiechnikMarcin.jpg" alt="Image of band drummer during a concert" />
+                        <header class="concerts__info">
+                            <p class="concerts__date">20.12.2018</p>
+                            <p class="concerts__location">Lublin, klub XXX</p>
+                            <button class="button">Buy a ticket</button>
+                        </header>
+                    </article>
+                    <article class="concerts__item">
+                        <img class="concerts__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band03_WiechnikMarcin.jpg" alt="Image of band vocalist and keyboard player during a concert" />
+                        <header class="concerts__info">
+                            <p class="concerts__date">20.12.2018</p>
+                            <p class="concerts__location">Lublin, klub XXX</p>
+                            <button class="button">Buy a ticket</button>
+                        </header>
+                    </article>
+                    <article class="concerts__item">
+                        <img class="concerts__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band04_JakubBodys.jpg" alt="Image of band keyboard player during a concert" />
+                        <header class="concerts__info">
+                            <p class="concerts__date">20.12.2018</p>
+                            <p class="concerts__location">Lublin, klub XXX</p>
+                            <button class="button">Buy a ticket</button>
+                        </header>
+                    </article>
+                    <article class="concerts__item">
+                        <img class="concerts__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band05_JakubBodys.jpg" alt="Image of band vocalist during a concert" />
+                        <header class="concerts__info">
+                            <p class="concerts__date">20.12.2018</p>
+                            <p class="concerts__location">Lublin, klub XXX</p>
+                            <button class="button">Buy a ticket</button>
+                        </header>
+                    </article>
+                </div>
+            </section>
+            <section id="video" class="content-section">
+                <h2 class="content-section__header">Video</h2>
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/AstRXh-vKNI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </section>
+            <section id="photos" class="content-section">
+                <h2 class="content-section__header">Photos</h2>
+                <ul class="gallery">
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band05_JakubBodys.jpg" alt="Image of band vocalist during a concert" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band06_JakubBodys.jpg" alt="Image of band drummer during a concert" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band07.jpg" alt="Image of band members at the construction site" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band08.jpg" alt="Image of band members posing against the wall with graffiti" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band09.jpg" alt="Image of band members standing in the shadows" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band10.jpg" alt="Image of band members standing at the construction site" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band11.jpg" alt="Image of band vocalist during a concert" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band04_JakubBodys.jpg" alt="Image of band keyboard player during a concert" />
+                    </li>
+                    <li class="gallery__item">
+                        <img class="gallery__image" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band03_WiechnikMarcin.jpg" alt="Image of band vocalist and keyboard player during a concert" />
+                    </li>
+                </ul>
+            </section>
+            <section id="contact" class="content-section">
+                <h2 class="content-section__header">Contact</h2>
+                <img class="gallery__image_ostatnie" src="https://raw.githubusercontent.com/daftcode/daftacademy-frontend4beginners-autumn2019/master/starter-pack/images/band12.jpg" alt="Image of band members posing next to a train" />
+                <address>
+                    Tel: 123 456 789<br/>
+                    E-mail: 6bmmusic@gmail.com
+                </address>
+                <form class="form">
+                    <div class="form__field">
+                        <label class="form__label" for="email">E-mail</label><br>
+                        <input class="form__input" type="email" name="email" id="email" required />
+                    </div>
+                    <div class="form__field">
+                        <label class="form__label" for="topic">Topic</label><br>
+                        <input class="form__input" type="text" name="topic" id="topic" required />
+                    </div>
+                    <div class="form__field">
+                        <button class="button2" type="submit">Contact us!</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <!--
+                ZAGADNIENIE PONADPROGRAMOWE
+                Podobnie jak wyżej, nagłówek jest utworzony dla użytku czytników ekranowych.
+            -->
+            <h2 class="screen-reader-only">Social media links</h2>
+            <ul class="social-links">
+                <li class="social-links__item">
+                    <a class="social-links__link" href="http://facebook.com/"><img src="https://cdn.pixabay.com/photo/2015/03/10/17/26/facebook-667456_960_720.png" width="30px" height="30px" alt="Facebook"></a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="http://instagram.com/"><img src="https://image.shutterstock.com/image-vector/camera-icon-260nw-528723916.jpg" width="30px" alt="Instagram"></a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="http://last.fm/"><img src="data:image/png;base64,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" width="30px" height=30px" alt="Last.fm"></a>
+                </li>
+                <li class="social-links__item">
+                    <a class="social-links__link" href="http://youtube.com/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEX/////AAD/vr7/l5f/k5P/kZH/2tr/4OD/xMT/mZn/+fn/4+P/qKj/r6//yMj/zc3/09P/TU3/u7v/8fH/7Oz/pKT/n5//Vlb/R0f/tbX/nJz/aWn/Ojr/LCz/jIz/9vb/fX3/Ghr/dHT/EhL/h4f/YWH/Pz//IiL/Wlr/MDD/cHD/e3v/Jyf/goL3kCEBAAAEWklEQVR4nO2c2VbiUBBFIwYIkJBAEiCCTOLUrf//e01EaYZou1KnqOvqs598vHvJyq3plucRQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQkg3zbJeO0nifhA0iigK89HoptO53uI3582mv/2j07kZ5WEYFcNGEPTjpNXLsnRhffJq0nYSFKG/WU7Hg9nqSsxqNhhPl3M/LIKknRqKZXHkrwe3cqN/8TxY+1GcXdYunk/0zU6ZLYcX+hV3O5e3+2AyvIBgaOdXctdQ9ksfbAW3jLuagi1rvTfaeoKJtds7iZZg29psT09HsGvtdYCO4ZO11gH3GoKBtdURsYLhylrqiGe8YMPa6QT8P3FgrXTCFC2YWhudgTYcWgudgf6ZvloLnXENNpxZC50xBhta+1SAFexZ61SALWy4FdDs6EMNR9Y6FeRQw7W1TgVLqKFrEU0J9mN6Z61TwQpqaG1TCVLQvai0BFnyd6PGdkoLaNi3lqkEeSEWknOopSUR0DAXnKPheRuY1BHIK38uOEfZaMjGMK0DNkDD34Jz7Fop8QtMbM8aaDgVnOOjWYRvWiGLppKG6L4d1l3C3HY8AA0lGf5Bw6+HDW+RNdNHwTmOWpoBMsBFBqaSc5w0bW9QflfQwFRyjNO29OIXStBVw22Ui2qV4wRFncOq0QJQIIebPhElT9XDEz7CEFdtE9USPxkPSe/lhrhmt6iB/+kATCIeGcMNZegYel4kNMSlwKIU/8shJllehTMUzdF8PaYlyqtwczWxnqHn9euHhLgyhqhM8+9Ru9p5Fc5Q1Jf5xjBht2aGHfwYw+2NWysDxU1iiiZNvnmMOqUgnKH+/zCtVSf5Qb/SmlEqzlD5W1o708B9S1XvQ0G2iBupUYxpUknGj4tp9OJS2csGXFyqlVs0hJU317OntrhcgzPUyPEXgPEOXI6f4Q0hAzq4Nje81gYqfQNfz2ANYe0LnCDUENiCctMQ2UYEGsJ6T4KSxTkvQMNnwTkODMHt/BnQENIDhs+KD4CGkgq8Xh8f+eRCPoshL+GfswQaSkrTb/M0Ku/emkBD4UyUZODoC0KgoaSFojfXVgAN3ZxNRL4LcnO+FPmm280ZYegSCWuZSpCCTs7qP0INXXxv8QQ1dPHNzCvUEDmNhgJ54bv3krsE+3bNnZUYfwEvVrLWqQAr+B+8A3bvLbcPNnTvPT72Q+NiZAoWdC+qwUY0Ja7diLgphT0ra6cj7vCCjj3JV1m+59KeqImGoFO7vpS2froTnGrswXrDlZ17ihsw3ai5oaOZIxb2F/+L0krBPZJn3Qg6yn4lkcKT3u/iX2jRbi+fGpQXJ3O1T2gl3VYjf50+rPTNbi2WQR+p9lrxsBjNN+v78QTRB90t9N5cmy/0/oJFuZO99b6TvYjCPH/fye43D3eyj/IwiophEPQ/lrKrrggmhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhPwQ/gCnHFmFM03ovQAAAABJRU5ErkJggg==" width="30px" height=30px" alt="Youtube"></a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
